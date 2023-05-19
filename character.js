@@ -98,12 +98,12 @@ export class Character {
 
     const moveUp = () => {
       positionY -= moveDistance;
-      this.element.style.top = `${positionX}px`;
+      this.element.style.top = `${positionY}px`;
     };
 
     const moveDown = () => {
-      positionX += moveDistance;
-      this.element.style.top = `${positionX}px`;
+      positionY += moveDistance;
+      this.element.style.top = `${positionY}px`;
     };
 
     window.addEventListener("keydown", (event) => {
