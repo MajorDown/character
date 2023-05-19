@@ -1,0 +1,42 @@
+body {
+    background: grey;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.character {
+    background: url(/sprite.png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.looking-down {
+    background-position: 0px 0px;
+}
+
+.looking-up {
+    background-position: 24px 0px;
+}
+
+.looking-left {
+    background-position: 72px 0px;
+}
+
+.looking-right {
+    background-position: 48px 0px;
+}
+
+.character.speaking .dial {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 26px;
+    display: block;
+    padding: 5px;
+    border: 2px black solid;
+    border-radius: 10px 10px 10px 0px;
+}
